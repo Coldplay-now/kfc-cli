@@ -1,0 +1,72 @@
+{
+  "name": "kfc-cli",
+  "version": "1.0.0",
+  "description": "KFC 文档管理平台命令行工具",
+  "main": "dist/index.js",
+  "bin": {
+    "kfc": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist",
+    "package": "npm run build && pkg . --out-path ./release",
+    "package:all": "npm run build && pkg . --out-path ./release --targets node18-macos-x64,node18-macos-arm64,node18-linux-x64,node18-linux-arm64,node18-win-x64",
+    "pack": "npm run build && npm pack",
+    "prepublishOnly": "npm run build"
+  },
+  "pkg": {
+    "scripts": [
+      "dist/**/*.js"
+    ],
+    "assets": [
+      "package.json"
+    ],
+    "targets": [
+      "node18-macos-x64",
+      "node18-macos-arm64",
+      "node18-linux-x64",
+      "node18-linux-arm64",
+      "node18-win-x64"
+    ],
+    "outputPath": "release"
+  },
+  "keywords": [
+    "kfc",
+    "cli",
+    "document",
+    "upload"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Coldplay-now/kfc-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Coldplay-now/kfc-cli/issues"
+  },
+  "homepage": "https://github.com/Coldplay-now/kfc-cli#readme",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "form-data": "^4.0.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^9.2.15"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.10.5",
+    "pkg": "^5.8.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "USER_MANUAL.md"
+  ]
+}

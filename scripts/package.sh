@@ -25,6 +25,12 @@ fi
 echo "📦 打包可执行文件..."
 npm run package:all
 
+# 重命名文件为 kfc-* 格式
+echo "📝 重命名文件..."
+if [ -f "scripts/rename-release.sh" ]; then
+    ./scripts/rename-release.sh
+fi
+
 # 创建发布目录
 echo "📁 创建发布包..."
 mkdir -p dist-release

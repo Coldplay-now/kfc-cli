@@ -14,7 +14,8 @@
     "package": "npm run build && pkg . --out-path ./release",
     "package:all": "npm run build && pkg . --out-path ./release --targets node18-macos-x64,node18-macos-arm64,node18-linux-x64,node18-linux-arm64,node18-win-x64",
     "pack": "npm run build && npm pack",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "release": "./scripts/create-release.sh"
   },
   "pkg": {
     "scripts": [
@@ -30,7 +31,8 @@
       "node18-linux-arm64",
       "node18-win-x64"
     ],
-    "outputPath": "release"
+    "outputPath": "release",
+    "bin": "dist/index.js"
   },
   "keywords": [
     "kfc",

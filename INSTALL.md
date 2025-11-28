@@ -75,15 +75,20 @@ npm link
 
 ### 方式 4: 使用安装脚本
 
-#### 从 GitHub Releases 安装（需要先发布）
+#### 从 GitHub Releases 安装（推荐）
 
+**macOS/Linux:**
 ```bash
-# 设置仓库地址（如果与默认不同）
-export KFC_CLI_REPO_URL="https://github.com/Coldplay-now/kfc-cli"
-
-# 下载并运行安装脚本
+# 直接运行（已配置默认仓库地址）
 curl -fsSL https://raw.githubusercontent.com/Coldplay-now/kfc-cli/main/scripts/install.sh | bash
 ```
+
+**Windows (PowerShell):**
+```powershell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Coldplay-now/kfc-cli/main/scripts/install.ps1" | Invoke-Expression
+```
+
+> 💡 **注意**: 此方式需要先在 GitHub Releases 中发布可执行文件。如果还没有发布，请使用下面的本地安装方式。
 
 #### 本地安装（推荐，无需 GitHub）
 

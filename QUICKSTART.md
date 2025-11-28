@@ -45,20 +45,24 @@ npm run package
 ./scripts/install-local.sh
 ```
 
-### 方式 2: 使用安装脚本（需要 GitHub Releases）
+### 方式 2: 使用安装脚本（推荐，一键安装）
 
 **macOS/Linux:**
 ```bash
-# 设置仓库地址（如果与默认不同）
-export KFC_CLI_REPO_URL="https://github.com/Coldplay-now/kfc-cli"
-
-# 下载并运行安装脚本
-curl -fsSL https://raw.githubusercontent.com/your-repo/kfc-cli/main/scripts/install.sh | bash
+# 直接运行（已配置默认仓库地址）
+curl -fsSL https://raw.githubusercontent.com/Coldplay-now/kfc-cli/main/scripts/install.sh | bash
 ```
 
 **Windows (PowerShell):**
 ```powershell
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/your-repo/kfc-cli/main/scripts/install.ps1" | Invoke-Expression
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Coldplay-now/kfc-cli/main/scripts/install.ps1" | Invoke-Expression
+```
+
+> 💡 **注意**: 此方式需要先在 GitHub Releases 中发布可执行文件。如果还没有发布，请使用方式 1（本地安装）。
+
+**Windows (PowerShell):**
+```powershell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Coldplay-now/kfc-cli/main/scripts/install.ps1" | Invoke-Expression
 ```
 
 ### 方式 2: 直接下载可执行文件

@@ -13,19 +13,37 @@ KFC 文档管理平台命令行工具
 
 ### 安装
 
+#### 方式 1: 使用安装脚本（推荐）
+
+```bash
+# macOS/Linux
+curl -fsSL https://raw.githubusercontent.com/Coldplay-now/kfc-cli/main/scripts/install.sh | bash
+
+# Windows (PowerShell)
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Coldplay-now/kfc-cli/main/scripts/install.ps1" | Invoke-Expression
+```
+
+#### 方式 2: 从源码构建
+
 ```bash
 # 安装依赖
 npm install
 
 # 构建项目
 npm run build
+
+# 打包
+npm run package
+
+# 本地安装
+./scripts/install-local.sh
 ```
 
 ### 初始化
 
 ```bash
 # 首次使用，初始化配置
-npm run dev init
+kfc init
 ```
 
 ### 基本使用

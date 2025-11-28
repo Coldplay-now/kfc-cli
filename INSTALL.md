@@ -82,7 +82,7 @@ npm link
 export KFC_CLI_REPO_URL="https://github.com/Coldplay-now/kfc-cli"
 
 # 下载并运行安装脚本
-curl -fsSL https://raw.githubusercontent.com/your-repo/kfc-cli/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Coldplay-now/kfc-cli/main/scripts/install.sh | bash
 ```
 
 #### 本地安装（推荐，无需 GitHub）
@@ -109,7 +109,7 @@ KFC_CLI_LOCAL_PATH=./release/kfc-macos-x64 ./scripts/install.sh
 
 ```powershell
 # 下载并运行安装脚本
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/your-repo/kfc-cli/main/scripts/install.ps1" -OutFile install.ps1
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Coldplay-now/kfc-cli/main/scripts/install.ps1" -OutFile install.ps1
 .\install.ps1
 ```
 

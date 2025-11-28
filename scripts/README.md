@@ -35,11 +35,11 @@ npm run package
 **使用方法：**
 ```bash
 # 方式1: 使用默认仓库地址
-curl -fsSL https://raw.githubusercontent.com/your-repo/kfc-cli/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Coldplay-now/kfc-cli/main/scripts/install.sh | bash
 
 # 方式2: 设置自定义仓库地址
 export KFC_CLI_REPO_URL="https://github.com/Coldplay-now/kfc-cli"
-curl -fsSL https://raw.githubusercontent.com/your-repo/kfc-cli/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Coldplay-now/kfc-cli/main/scripts/install.sh | bash
 
 # 方式3: 使用本地文件（无需下载）
 KFC_CLI_LOCAL_PATH=./release/kfc-macos-x64 ./scripts/install.sh
@@ -59,7 +59,7 @@ KFC_CLI_LOCAL_PATH=./release/kfc-macos-x64 ./scripts/install.sh
 **使用方法：**
 ```powershell
 # 下载并运行
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/your-repo/kfc-cli/main/scripts/install.ps1" | Invoke-Expression
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Coldplay-now/kfc-cli/main/scripts/install.ps1" | Invoke-Expression
 ```
 
 ---
@@ -106,7 +106,7 @@ npm run package
 
 ```bash
 # 直接使用安装脚本
-curl -fsSL https://raw.githubusercontent.com/your-repo/kfc-cli/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Coldplay-now/kfc-cli/main/scripts/install.sh | bash
 ```
 
 ### 用户安装（本地文件）
